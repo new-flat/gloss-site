@@ -1,0 +1,973 @@
+/* 共通 */
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F4F2ED;
+    font-family: "Hiragino Mincho ProN", sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* アニメーション用 */
+@keyframes borderExpandHorizontal {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes borderExpandVertical {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.animated-border-top, .animated-border-bottom {
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+    position: absolute;
+    animation: borderExpandHorizontal 1.5s forwards;
+}
+
+.animated-border-left, .animated-border-right {
+    width: 0.5px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    animation: borderExpandVertical 1.5s forwards;
+}
+
+.mail {
+    margin: 0 20px;
+}
+
+.sns_btn i {
+    margin-right: 5px;
+}
+
+/* 適用する要素にrelativeを追加 */
+.title_gallery, .comment, .item, #footer, .left_gallery ,.gallery_img, .service-list, .gallery_list {
+    position: relative;
+}
+
+/* 位置調整 */
+.title_gallery .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+.comment .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+.comment .animated-border-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.item .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+.item .animated-border-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.gallery_img .animated-border-right {
+    right: 0;
+    top: 0;
+} 
+
+.gallery_img .animated-border-left {
+    left: 0;
+    top: 0;
+} 
+
+.service-list .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+.service-list .animated-border-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.gallery_list .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+.gallery_list .animated-border-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+#footer .animated-border-top {
+    top: 0;
+    left: 0;
+}
+
+#footer .animated-border-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+/* PC用（1080px以上） */
+@media screen and (min-width: 1080px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Homeトップ */
+    .topImage {
+        width: 100%;
+        background-image: url(/Users/shinhiratatsuya/Downloads/IMG_0821.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+    }
+    
+    .topComment {
+        margin: 30px 0 150px 0;
+    }
+    
+    .comment1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .comment2 {
+        font-size: 24px;
+    }
+
+    /* Homeギャラリー */
+
+    .title_gallery{
+        padding: 40px 0 40px 20px;
+        font-size: 35px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .left_gallery,
+    .right_gallery {
+        width: 50%;
+        padding: 2% 0;
+    }
+
+    .gallery_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .reverse .gallery_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        float: right;
+    }
+
+    .right_gallery .gallery_img img {
+        float: right;
+    }
+
+    .gallery_img img {
+        width: 96%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 1.2s ease;
+    }
+
+    .gallery_img img:hover {
+        transform: scale(0.85);
+    }
+
+    .gallery_text {
+        margin-left: 30px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .gallery_text h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .gallery_img p {
+        margin: 5px 0;;
+        font-size: 13px;
+    }
+
+    .gallery_text h2 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .gallery_text p {
+        margin: 5px 0;
+    }
+
+    /* フッター */
+    .footerContents {
+        display: flex;
+        padding-top: 100px;
+        position: absolute;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+
+    .map iframe {
+        aspect-ratio: 16/9;
+        max-width: 660px;
+        width: 100%;
+        height: auto;
+    }
+
+    .information {
+        font-family:"Noto Serif JP", sans-serif;
+    }
+
+    .information ul {
+        padding: 0;
+    }
+
+    .menu-list {
+        text-align: center;
+        padding: 0;
+     }
+
+    .sns ul {
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    /* サービスメニュー */
+    .service-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+    }
+
+}
+
+/* ヘッダー */
+
+#header {
+    width: 90%;
+    background-color: #F4F2ED;
+    /* position: fixed;
+    z-index: 999;
+    top: 0; */
+    max-width: 100%;
+}
+
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.telButton {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    display: flex;
+}
+
+.mailButton {
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    display: flex;
+}
+
+.title {
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+}
+
+.subtitle {
+    font-size: 10px;
+    letter-spacing: 0.3rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+} 
+
+.title {
+    font-family: "League Spartan Light";
+}
+
+.subtitle {
+    font-family: "League Spartan Light";
+}
+
+/* ハンバーガーメニュー */
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color: black;
+}
+
+/* メニューのスタイル */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    z-index: 50;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* 閉じるアイコンのスタイル */
+.close-icon {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* メニュー表示時のスタイル */
+.menu.show {
+    right: 0;
+}
+
+/* オーナーコメント */
+
+.left_comment {
+    width: 50%;
+}
+
+.comment {
+    padding: 50px 0;
+    /* border-bottom: 0.7px solid black;
+    border-top: 0.7px solid; */
+}
+
+.right_comment {
+    text-align: center;
+    width: 40%;
+    margin: 30px;
+}
+
+.ornerComment {
+    padding: 35px;
+    line-height: 1.7rem;
+    font-size: 17px;
+}
+
+.comment {
+    display: flex;
+}
+
+.orner {
+    float: right;
+    padding: 0 50px;
+    font-size: 17px;
+}
+
+.storeImg {
+    width: 85%;
+    height: 400px;
+}
+
+/* フッター */
+#footer {
+    font-family: "Noto Serif JP", sans-serif;
+    padding-top: 50px;
+}    
+
+.logo_footer {
+    float: left;
+    text-align: center;
+}
+
+.currentPage {
+    color: #A89C88;
+}
+
+.information li:first-child {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.information {
+    font-family:"Noto Serif JP", sans-serif;
+    padding: 0;
+}
+
+.info_payment {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.payment_logo {
+    height: 1.6rem;
+    margin-right: 0.5rem;
+}
+
+.payment_logo img {
+    width: 50px;
+    height: 100%;
+}
+
+
+
+/* googleマップ */
+
+
+/* 共通：サービスメニュー */
+.contents {
+    margin: 60px 0;
+    padding: 50px ;
+}
+
+.service-list {
+    /* border-top: 0.7px solid black;
+    border-bottom: 0.7px solid black; */
+    padding: 50px 0;
+}
+
+.service-list img {
+    width: 100%;
+}
+
+.service-list p {
+    font-size: 14px;
+}
+
+/* サービス詳細ページ */
+.detail {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.content {
+    border-bottom: 0.7px solid black;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.content h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.menuContent {
+    padding-top: 50px;
+    border-top: 0.7px solid black;
+    display: flex;
+    max-width: 850px;
+}
+
+
+.menuImage {
+    width: 50%;
+}
+
+.menuText {
+    width: 42%;
+    padding: 40px 60px;
+}
+
+.menuImage img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 共通：ギャラリー */
+.gallery_contents {
+    margin: 110px 0;
+    padding: 50px;
+}
+
+.gallery_list {
+    padding: 50px 0;
+}
+
+.gallery_items ul {
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.gallery_items img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:800px) and ( max-width:1080px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Homeトップ */
+    .topImage {
+        width: 100%;
+        background-image: url(/Users/shinhiratatsuya/Downloads/IMG_0821.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+    }
+    /* Homeギャラリー */
+
+    .title_gallery{
+        padding: 40px 0 40px 20px;
+        font-size: 35px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .gallery_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        float: left;
+    }
+    .reverse .gallery_img img {
+        width: 96%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .right_gallery .gallery_img img {
+        float: right;
+    }
+
+    .gallery_img img {
+        width: 96%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 1.2s ease;
+    }
+
+    .gallery_img img:hover {
+        transform: scale(0.85);
+    }
+
+    .gallery_text {
+        margin-left: 30px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .gallery_text h2 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .gallery_text p {
+        margin: 5px 0;
+        font-size: 13px;
+    }
+
+    /* フッター */
+    .footerContents {
+        display: flex;
+        padding-top: 100px;
+        position: absolute;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .map iframe {
+        aspect-ratio: 16/9;
+        max-width: 660px;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-list {
+        text-align: center;
+        padding: 0;
+     }
+
+    .information {
+        font-family:"Noto Serif JP", sans-serif;
+        width: 25%;
+    }
+
+    .information ul {
+        padding: 0;
+    }
+    
+    .sns ul {
+        padding: 0;
+        justify-content: space-between;
+    }
+        
+    /* サービスメニュー */
+    .service-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+        padding: 0;
+    }
+    .topComment {
+        margin: 25px 0 150px 0;
+    }
+    
+    .comment1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .comment2 {
+        font-size: 18px;
+    }
+
+    .left_gallery,
+    .right_gallery {
+        width: 50%;
+        padding:20px 0;
+    }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 800px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .contact_btn {
+        align-items: center;
+        display: flex;
+    }
+
+    /* Homeトップ */
+    .topImage {
+        width: 100%;
+        background-image: url(/Users/shinhiratatsuya/Downloads/IMG_0821.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 30vh;
+    }
+    
+    .topComment {
+        margin: 25px 0 90px 0;
+    }
+
+    .comment {
+        display: block;
+    }
+
+    .storeImg {
+        width: 85%;
+    }
+
+    .left_comment {
+        width: 100%;
+    }
+
+    .right_comment {
+        text-align: center;
+        margin: 50px 0;
+        width: 100%;
+    }
+    
+    .comment1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .comment2 {
+        font-size: 18px;
+    }
+
+    /* メニュー */
+    .contents {
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* メニュー詳細 */
+    .detail {
+        padding: 0;
+    }
+
+    .content h1 {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .menuContent {
+        display: block;
+    }
+
+    .menuImage {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menuText {
+        padding: 30px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menuText p {
+        padding-top: 20px;
+    }
+
+    /* ギャラリー */
+    .gallery_contents {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .title_gallery{
+        padding: 40px 0 40px 20px;
+        font-size: 35px;
+    }
+
+    .gallery_items ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .gallery_items img {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .item {
+        align-items: center;
+        position: relative;
+    }
+
+    .item:last-child {
+        margin-bottom: 100px; 
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .gallery_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .reverse .gallery_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        float: right;
+        text-align: center;
+    }
+
+    .gallery_img img {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 1.2s ease;
+    }
+
+    .gallery_img img:hover {
+        transform: scale(0.85);
+    }
+
+    .gallery_text {
+        margin-left: 30px;
+        flex: 1;
+    }
+
+    .gallery_text h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .gallery_img p {
+        margin: 5px 0;;
+    }
+
+    .gallery_text {
+        text-align: center;
+    }
+
+    .gallery_text h2 {
+        font-size: 24px;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .gallery_text p {
+        margin: 5px 0;
+    }
+
+    /* フッター */
+
+    #footer {
+        font-family: "Noto Serif JP", sans-serif;
+        padding-top: 50px;
+        width: 90%;
+    }   
+
+    .footerContents {
+        padding-top: 100px;
+    }
+
+    .information {
+        font-family:"Noto Serif JP", sans-serif;
+    }
+
+    .information ul {
+        padding: 0;
+    }
+
+    .menu-list {
+        padding: 30px 0;
+     }
+
+    .sns.footerItem {
+        padding: 30px 0;
+    }
+
+    .sns ul {
+        padding: 0;
+    }
+
+    .sns li {
+        margin-right: 10px;
+    }
+
+    /* サービスメニュー */
+    .service-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px; 
+    }
+
+    .item {
+        align-items: center;
+        position: relative;
+        border-bottom: 0.7px solid;
+    }
+
+    .left_gallery,
+    .right_gallery {
+        padding: 40px 0;
+    }
+
+}
+
+

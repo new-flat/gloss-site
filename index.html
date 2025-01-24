@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美容室gloss</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be9ef8be23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ヘッダー -->
+    <header id="header" class="wrapper">
+        <div class="logo_header">
+            <div class="logo">
+                <div class="title">gloss</div>
+                <div class="subtitle">beauty salon</div>
+            </div>
+        </div>
+        <div class="header-area">
+            <!-- ハンバーガーメニュー-->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+            <!-- 電話とメールボタン -->
+            <div class="contact_btn">
+                <a href="tel:078-734-2870"><i class="fa-solid fa-phone fa-lg"></i></a>
+                <a href="" class="mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+        
+        <div id="menu" class="menu">
+            <div class="close-icon" onclick="toggleMenu()">&times;</div>
+            <ul class="pageLink">
+                <li class="currentPage">Home</li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <main class="wrapper">
+<!-- トップ -->
+        <section class="top">
+            <div class="topImage"></div>
+            <div class="topComment">
+                <div class="comment1">落ち着いたサロン内で、寛ぎのひとときと大人のお洒落を。</div>
+                <div class="comment2">Relaxing and Fashionable</div>
+            </div>
+        </section>
+<!-- ギャラリー -->
+        <div class="title_gallery">
+            <div class="animated-border-top"></div>
+            Gallery - ギャラリー
+        </div>
+        <section class="gallery">
+            <div class="collection">
+                <a href="menu2.html">
+                    <div class="item">
+                        <div class="animated-border-top"></div>
+                        <div class="left_gallery">
+                            <div class="gallery_img">
+                                <div class="animated-border-right"></div>
+                                <img src="/Users/shinhiratatsuya/Downloads/375222d25f026.jpg" alt="縮毛矯正・ストレート">
+                            </div>
+                        </div>
+                        <div class="right_gallery">    
+                            <div class="gallery_text">
+                                <h2>縮毛矯正・ストレート</h2>
+                                <p>40～50代の大人女性/くせ毛、髪の傷みで </p>
+                                <p>お悩みの方必見。うる艶ストレートが実現。</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="menu5.html">
+                    <div class="item reverse">
+                        <div class="animated-border-top"></div>
+                        <div class="right_gallery">
+                            <div class="gallery_img">
+                                <div class="animated-border-left"></div>
+                                <img src="/Users/shinhiratatsuya/Downloads/akda.jpg" alt="ショートヘア">
+                            </div>
+                        </div>
+                        <div class="left_gallery">
+                            <div class="gallery_text">
+                                <h2>ショートヘア</h2>
+                                <p>一人ひとりに合わせた大人なショートカットで</p>
+                                <p>360°綺麗なシルエットが叶います。</p>
+                            </div> 
+                        </div>   
+                    </div>
+                </a>
+
+                <a href="menu3.html">
+                    <div class="item">
+                        <div class="animated-border-top"></div>
+                        <div class="left_gallery">
+                            <div class="gallery_img">
+                                <div class="animated-border-right"></div>
+                                <img src="/Users/shinhiratatsuya/Downloads/B177103831_edited.jpg" alt="グレイカラー・白髪カバー">
+                            </div>
+                        </div>
+                        <div class="right_gallery">
+                            <div class="gallery_text">
+                                <h2>グレイカラー・白髪カバー</h2>
+                                <p>髪の痛み予防と美容を同時に行い、</p>
+                                <p>頭皮がヒリヒリしない、痛みにくいカラー剤を使用。</p>                      
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="item reverse">
+                    <div class="animated-border-top"></div>
+                    <div class="animated-border-bottom"></div>
+                    <div class="right_gallery">
+                        <div class="gallery_img">
+                            <div class="animated-border-left"></div>
+                            <img src="/Users/shinhiratatsuya/Downloads/B187252452.jpg" alt="プライベートサロン">
+                        </div>
+                    </div>
+                    <div class="left_gallery">
+                        <div class="gallery_text">
+                            <h2>少人数のプライベートサロン</h2>
+                            <p>個人サロンだからできる、時間を惜しまない</p>
+                            <p>適切な処理と施術。[Wi-Fi完備]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comment">
+            <div class="animated-border-top"></div>
+            <div class="animated-border-bottom"></div>
+            <div class="left_comment">
+                <div class="ornerComment">そろそろ落ち着いたサロンで…そう思われている大人世代の方にぴったりのサロンです。気になる白髪・くせ毛・ぺたんこ髪など、お悩みに親身になってお応えします。お客様の声に寄り添いながら、独自のカウンセリングで一人ひとりに合ったヘアスタイルをご提案させて頂きます。個室で周りを気にせずゆったりとお寛ぎ下さい。</div>
+                <div class="orner">オーナー　新平 学</div>
+            </div>
+            <div class="right_comment">
+                <img class="storeImg" src="/Users/shinhiratatsuya/Downloads/3540855_20181015002241.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer id="footer" class="wrapper">
+        <div class="animated-border-top"></div>
+        <div class="logo_footer">
+            <div class="title">gloss</div>
+            <div class="subtitle">beauty salon</div>
+        </div>
+        <div class="footerContents">
+            <div class="map footerItem">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13129.043305934825!2d135.1040740629168!3d34.648115319456444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600085aa61df689b%3A0xbbad3c753a253646!2z576O5a655a6k44Kw44Ot44K5!5e0!3m2!1sja!2sjp!4v1720932105451!5m2!1sja!2sjp" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul class="info_payment">
+                    <!-- visa -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/visa_logo.svg" alt="">
+                    </li>
+                    <!-- mastercard -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/master_logo.svg" alt="">
+                    </li>
+                    <!-- jcb -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/jcb_logo.svg" alt="">
+                    </li>
+                    <!-- american express -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/american_logo.svg" alt="">
+                    </li>
+                    <!-- diners club -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/diners_logo.svg" alt="">
+                    </li>
+                    <!-- paypay -->
+                    <li class="payment_logo">
+                        <img src="/Users/shinhiratatsuya/Downloads/paypay_logo.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="menu-list">
+                <li class="currentPage">Home</li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+
+
+            <div class="information">
+                <ul>
+                    <li>美容室グロス</li>
+                    <li><a href="tel">123-456-7890</a></li>
+                    <li>兵庫県神戸市須磨区</li>
+                    <li>須磨寺町2-7-3</li>
+                    <li>Open. 9:00～18:00 </li>
+                    <li>Closed. 毎週月曜/祝日</li>
+                </ul>
+            </div>
+            <div class="sns footerItem">
+                <p>Follow Us！</p>
+                <ul class="sns_btn">
+                    <li><a href=""><i class="fa-brands fa-blogger-b"></i>アメーバブログ</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>インスタグラム</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="function.js"></script>
+</body>
+</html>

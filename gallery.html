@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美容室gloss</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be9ef8be23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ヘッダー -->
+<header id="header" class="wrapper">
+    <div class="logo_header">
+        <div class="logo">
+            <div class="title">gloss</div>
+            <div class="subtitle">beauty salon</div>
+        </div>
+    </div>
+    <div class="header-area">
+        <!-- ハンバーガーメニュー-->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>    
+        <!-- 電話とメールボタン -->
+        <div class="contact_btn">
+            <a href="tel:078-734-2870"><i class="fa-solid fa-phone fa-lg"></i></a>
+            <a href="" class="mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
+        </div>
+    </div>
+    
+    <div id="menu" class="menu">
+        <div class="close-icon" onclick="toggleMenu()">&times;</div>
+        <ul class="pageLink">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="currentPage">Gallery</li>
+        </ul>
+    </div>   
+</header>
+    <main id="main" class="wrapper">
+        <div class="gallery_contents">
+            <p>Gallery</p>
+            <div class="gallery_list">
+                <div class="animated-border-top"></div>
+                <div class="animated-border-bottom"></div>
+                <h3 class="list_title">Hair Styling</h3>
+                <div class="gallery_items">
+                    <ul>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_2_4.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_2_4.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_2_4.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <h3 class="list_title">Color</h3>
+                <div class="gallery_items">
+                    <ul>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_4.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_4.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_4.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <h3 class="list_title">Hair Repair</h3>
+                <div class="gallery_items">
+                    <ul>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_3.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_3.jpg" alt=""></li>
+                        <li><img src="https://d1razp3bffbdru.cloudfront.net/web/catalogue-thumbnail/top/color_1_3.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- フッター -->
+<footer id="footer" class="wrapper">
+    <div class="animated-border-top"></div>
+    <div class="logo_footer">
+        <div class="title">gloss</div>
+        <div class="subtitle">beauty salon</div>
+    </div>
+    <div class="footerContents">
+        <div class="map footerItem">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13129.043305934825!2d135.1040740629168!3d34.648115319456444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600085aa61df689b%3A0xbbad3c753a253646!2z576O5a655a6k44Kw44Ot44K5!5e0!3m2!1sja!2sjp!4v1720932105451!5m2!1sja!2sjp" width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="info_payment">
+                <!-- visa -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/visa_logo.svg" alt="">
+                </li>
+                <!-- mastercard -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/master_logo.svg" alt="">
+                </li>
+                <!-- jcb -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/jcb_logo.svg" alt="">
+                </li>
+                <!-- american express -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/american_logo.svg" alt="">
+                </li>
+                <!-- diners club -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/diners_logo.svg" alt="">
+                </li>
+                <!-- paypay -->
+                <li class="payment_logo">
+                    <img src="/Users/shinhiratatsuya/Downloads/paypay_logo.svg" alt="">
+                </li>
+            </ul>
+        </div>
+        
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="currentPage">Gallery</li>
+        </ul>
+
+
+
+        <div class="information">
+            <ul>
+                <li>美容室グロス</li>
+                <li><a href="tel">123-456-7890</a></li>
+                <li>兵庫県神戸市須磨区</li>
+                <li>須磨寺町2-7-3</li>
+                <li>Open. 9:00～18:00 </li>
+                <li>Closed. 毎週月曜/祝日</li>
+            </ul>
+        </div>
+        <div class="sns footerItem">
+            <p>Follow Us！</p>
+            <ul class="sns_btn">
+                <li><a href=""><i class="fa-brands fa-blogger-b"></i>アメーバブログ</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>インスタグラム</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <script src="function.js"></script>
+</body>
+</html>
