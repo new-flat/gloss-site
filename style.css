@@ -23,6 +23,14 @@ section {
     margin-bottom: 50px;
 }
 
+.mail {
+    margin: 0 20px;
+}
+
+.sns_btn i {
+    margin-right: 5px;
+}
+
 /* アニメーション用 */
 @keyframes borderExpandHorizontal {
     from {
@@ -56,14 +64,6 @@ section {
     background-color: black;
     position: absolute;
     animation: borderExpandVertical 1.5s forwards;
-}
-
-.mail {
-    margin: 0 20px;
-}
-
-.sns_btn i {
-    margin-right: 5px;
 }
 
 /* 適用する要素にrelativeを追加 */
@@ -168,7 +168,6 @@ section {
     }
 
     /* Homeギャラリー */
-
     .title_gallery{
         padding: 40px 0 40px 20px;
         font-size: 35px;
@@ -256,7 +255,6 @@ section {
         width: 90%;
     }
     
-
     .map iframe {
         aspect-ratio: 16/9;
         max-width: 660px;
@@ -288,11 +286,9 @@ section {
         grid-template-columns: repeat(4, 1fr);
         gap: 35px;
     }
-
 }
 
 /* ヘッダー */
-
 #header {
     width: 90%;
     background-color: #F4F2ED;
@@ -358,7 +354,6 @@ section {
 }
 
 /* ハンバーガーメニュー */
-
 .menu-icon {
     display: flex;
     flex-direction: column;
@@ -423,7 +418,6 @@ section {
 }
 
 /* オーナーコメント */
-
 .left_comment {
     width: 50%;
 }
@@ -503,11 +497,6 @@ section {
     height: 100%;
 }
 
-
-
-/* googleマップ */
-
-
 /* 共通：サービスメニュー */
 .contents {
     margin: 60px 0;
@@ -515,8 +504,6 @@ section {
 }
 
 .service-list {
-    /* border-top: 0.7px solid black;
-    border-bottom: 0.7px solid black; */
     padding: 50px 0;
 }
 
@@ -552,7 +539,6 @@ section {
     display: flex;
     max-width: 850px;
 }
-
 
 .menuImage {
     width: 50%;
@@ -607,8 +593,8 @@ section {
         background-position: center;
         min-height: 70vh;
     }
-    /* Homeギャラリー */
 
+    /* Homeギャラリー */
     .title_gallery{
         padding: 40px 0 40px 20px;
         font-size: 35px;
@@ -631,6 +617,7 @@ section {
         overflow: hidden;
         float: left;
     }
+
     .reverse .gallery_img img {
         width: 96%;
         height: auto;
@@ -713,6 +700,7 @@ section {
         gap: 35px;
         padding: 0;
     }
+
     .topComment {
         margin: 25px 0 150px 0;
     }
@@ -915,7 +903,6 @@ section {
     }
 
     /* フッター */
-
     #footer {
         font-family: "Noto Serif JP", sans-serif;
         padding-top: 50px;
@@ -967,7 +954,6 @@ section {
     .right_gallery {
         padding: 40px 0;
     }
-
 }
 
 
